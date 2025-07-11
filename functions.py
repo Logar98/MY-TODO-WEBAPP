@@ -1,4 +1,4 @@
-FILEPATH=r"E:\Python_Projects\todos.txt"
+FILEPATH="todos.txt"
 def reading(Filepath=FILEPATH):
     with open(Filepath, "r") as f:
             local_todos = f.readlines()
