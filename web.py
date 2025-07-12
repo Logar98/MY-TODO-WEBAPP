@@ -18,6 +18,8 @@ for i,todo in enumerate(todos):
         fs.writing(t+"\n" for t in todos)
         del st.session_state[todo]
         st.rerun()
+    else:
+        continue
 
 st.text_input(label="", placeholder="Enter a todo...", 
               on_change=add_todo, key="new_todo")
